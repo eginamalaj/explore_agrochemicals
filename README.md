@@ -15,7 +15,7 @@ To run this analysis two files are require:
 
 Data vizalization and exloratory analysis was performed to idnetify trends in agrochemical use across Canada for the last 35 years. The figure below shows the percent of the cropland treated with agrochemicals for each Census of Agriculture year and agricultural region in Canada. Agrochemicals include fertilizers, insecticides, fungicides, and herbicides, and the agricultural regions are ordered from west to east: British Columbia (Pacific; turquoise), Alberta, Saskatchewan and Manitoba (Prairie; orange), Ontario and Quebec (Central; red), and Nova Scotia, New Brunswick, Newfoundland/Labrador, Prince Edward Island (Atlantic; blue). Note that the date range of available data from the Census of Agriculture varies by agrochemical group: fertilizers (1991–2016), insecticides and fungicides (1996–2016), and herbicides (1981–2016). Two census division units for herbicides and 11 census division units for fertilizers reported 100% area cropped, suggesting frequent, repeated applications in a growing season.
 
-![boxplot_agrochem](C:/Users/Egina/Dropbox/_Work/Github/explore_agrochem/boxplot_agrochem.png)
+![boxplot_agrochem](https://github.com/eginamalaj/explore_agrochemicals/figure-html/boxplot_agrochem)
 
 The 2016 Census of Agriculture boundary file for the CD units (`2016CD_ag.shp` in CDshapefile folder) was used for spatial mapping. Mapping categories were optimized to illustrate the spatial distribution of each agrochemical group based on their specific distributions by census year. For example, the figure below shows the distribution of fungicides for the year 2016. 
 
