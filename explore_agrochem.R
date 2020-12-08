@@ -10,25 +10,12 @@ require(raster)# getData
 require(cowplot) #plot_grid
 #
 #
-setwd("C:/Users/Egina/Dropbox/_Work/PApers/R-Code/AgrochemTrends")
-#
-# Home
-prj<-"C:/Users/Egina/Dropbox/_Work/PApers/R-Code/AgrochemTrends"
-#
-# Create folders data, RData, tables, figures in your directory
-#
-## Subfolder paths
-datadir <- file.path(prj, "data")# data
-rdatadir <- file.path(prj, "RData")# caching objects
-tabdir <- file.path(prj, 'tables')# tables
-figdir <- file.path(prj, 'figures')# figures
-#
 #
 # Load data that was created from dataClean.R file
-load(file=file.path(rdatadir, "censdat.RData"))# data saved as cens
+load("censdat.RData")# data saved as cens
 #
 # Import shapefiles with stats Canada's census units
-cd<- readOGR("C:/Users/Egina/Dropbox/_Work/PApers/R-Code/AgrochemTrends/data/CD/2016CD_ag.shp","2016CD_ag")
+cd<- readOGR("CDshapefile/2016CD_ag.shp","2016CD_ag")
 #
 # ------------------------------------------------------------------------------------------------------
 # Functions For Plotting
