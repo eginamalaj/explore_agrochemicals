@@ -1,4 +1,4 @@
-# Mapping of the agrochemical and crop changes across Canada
+# Visualizing agrochemical and crop changes across Canada
 
 This file contains part of the R code to run **exploratory analysis** for the article:
 
@@ -6,12 +6,18 @@ This file contains part of the R code to run **exploratory analysis** for the ar
 
 The original datasets and full R code produced from this study are available at: Federated Research Data Repository (FRDR) https://doi.org/10.20383/101.0272
 
+
+## Depends
+
 To run this analysis two files are require:  
 (i) `dataClean.RData` file produced in the repository **[CleanCensusDat](https://github.com/eginamalaj/CleanCensusDat)**;  
 (ii) CDshapefile folder where `2016CD_ag.shp` file is necessary for mapping. 
 
+R version 3.6.1
 
-## 1. Agrochemicals
+Packages: tidyverse, rgdal, doBy, egg, classInt, raster, cowplot
+
+## Agrochemicals
 
 Data vizalization and exloratory analysis was performed to idnetify trends in agrochemical use across Canada for the last 35 years. The figure below shows the percent of the cropland treated with agrochemicals for each Census of Agriculture year and agricultural region in Canada. Agrochemicals include fertilizers, insecticides, fungicides, and herbicides, and the agricultural regions are ordered from west to east: British Columbia (Pacific; turquoise), Alberta, Saskatchewan and Manitoba (Prairie; orange), Ontario and Quebec (Central; red), and Nova Scotia, New Brunswick, Newfoundland/Labrador, Prince Edward Island (Atlantic; blue). Note that the date range of available data from the Census of Agriculture varies by agrochemical group: fertilizers (1991–2016), insecticides and fungicides (1996–2016), and herbicides (1981–2016). Two census division units for herbicides and 11 census division units for fertilizers reported 100% area cropped, suggesting frequent, repeated applications in a growing season.
 
@@ -26,7 +32,7 @@ Most of the data followed a similar, left-skewed distributions, and therefore qu
 ![map_agrochem](https://user-images.githubusercontent.com/54320408/101517595-8a8e2f00-3946-11eb-826a-2b7ec8bfcff8.png)
 
 
-## 2. Crops
+## Crops
 
 Figure below shows proportion of land planted with nine major agricultural crops for eight census years (1981–2016) for each of the four agricultural regions in Canada. The agricultural regions are ordered from west to east: British Columbia (Pacific), Alberta, Saskatchewan and Manitoba (Prairie), Ontario and Quebec (Central), and Nova Scotia, New Brunswick, Newfoundland/Labrador, Prince Edward Island (Atlantic).
 
@@ -42,7 +48,7 @@ There were notable regional patterns in the distribution of major crops with: (i
 Here, we can notice specific areas where the changes happened, such as a decrease in cereals and increase in oilseeds for the Prairie region.
 
 
-## 3. Summary
+## Summary
 
 This study reveals rapid, widescale, and sustained increases in agrochemical applications across much of Canada’s four agricultural regions over three decades. Dramatic shifts in agrochemical treatments and related cropping patterns were most notable for the Prairie and Central regions, but they were associated with different crop types that are unique to each region.
 
