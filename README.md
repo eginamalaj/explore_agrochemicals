@@ -15,29 +15,29 @@ To run this analysis two files are require:
 
 Data vizalization and exloratory analysis was performed to idnetify trends in agrochemical use across Canada for the last 35 years. The figure below shows the percent of the cropland treated with agrochemicals for each Census of Agriculture year and agricultural region in Canada. Agrochemicals include fertilizers, insecticides, fungicides, and herbicides, and the agricultural regions are ordered from west to east: British Columbia (Pacific; turquoise), Alberta, Saskatchewan and Manitoba (Prairie; orange), Ontario and Quebec (Central; red), and Nova Scotia, New Brunswick, Newfoundland/Labrador, Prince Edward Island (Atlantic; blue). Note that the date range of available data from the Census of Agriculture varies by agrochemical group: fertilizers (1991–2016), insecticides and fungicides (1996–2016), and herbicides (1981–2016). Two census division units for herbicides and 11 census division units for fertilizers reported 100% area cropped, suggesting frequent, repeated applications in a growing season.
 
-![boxplot_agrochem](./explore_agrochemicals/figure-html/boxplot_agrochem.png)
+![boxplot_agrochem](https://user-images.githubusercontent.com/54320408/101517334-41d67600-3946-11eb-9c78-e03e4453ca5a.png)
 
 The 2016 Census of Agriculture boundary file for the CD units (`2016CD_ag.shp` in CDshapefile folder) was used for spatial mapping. Mapping categories were optimized to illustrate the spatial distribution of each agrochemical group based on their specific distributions by census year. For example, the figure below shows the distribution of fungicides for the year 2016. 
 
-![hist_fung_2016](C:/Users/Egina/Dropbox/_Work/Github/explore_agrochem/hist_fung_2016.png){ width=50% }
+![hist_fung_2016](https://user-images.githubusercontent.com/54320408/101517528-777b5f00-3946-11eb-8539-4d0ab5a40f37.png)
 
 Most of the data followed a similar, left-skewed distributions, and therefore quantile distribution of classes was performed for multi-map vizualitation for all groups. Figure below shows the geographic distribution of agrochemicals calculated as percent of cropland treated with fertilizers, insecticides, fungicides, and herbicides for each census of agriculture year across Canada. Note that the date range from the Census of Agriculture varies by agrochemical group: fertilizers (1991–2016), insecticides and fungicides (1996–2016), and herbicides (1981–2016). Two census division units for herbicides and 11 census division units for fertilizers reported > 100% area cropped, suggesting frequent, repeated applications in a growing season
 
-![map_agrochem](C:/Users/Egina/Dropbox/_Work/Github/explore_agrochem/map_agrochem.png)
+![map_agrochem](https://user-images.githubusercontent.com/54320408/101517595-8a8e2f00-3946-11eb-826a-2b7ec8bfcff8.png)
 
 
 ## 2. Crops
 
 Figure below shows proportion of land planted with nine major agricultural crops for eight census years (1981–2016) for each of the four agricultural regions in Canada. The agricultural regions are ordered from west to east: British Columbia (Pacific), Alberta, Saskatchewan and Manitoba (Prairie), Ontario and Quebec (Central), and Nova Scotia, New Brunswick, Newfoundland/Labrador, Prince Edward Island (Atlantic).
 
-![crop_groups](C:/Users/Egina/Dropbox/_Work/Github/explore_agrochem/crop_groups.png)
+![crop_groups](https://user-images.githubusercontent.com/54320408/101517725-ae517500-3946-11eb-8154-0f93b856dccf.png)
 
 There were notable regional patterns in the distribution of major crops with: (i) canola, wheat, pulses, oats, and barley mostly grown in the Prairie region; (ii) soybeans and corn almost exclusively grown in the Central region; (iii) fruits and vegetables grown in all provinces, but with the greatest area in production in the Central and Pacific regions; and (iv) potatoes predominantly grown in the Atlantic and the Prairie regions. This can be visually inspected by mapping these groups of crops. The proportion of land treated in the CD unit was calculated as the area in each class divided by the total area in cropland. Classes included:   
 (i) cereals and pulses;  
 (ii) oilseeds and soybeans; and   
 (iii) fruits and vegetables. 
 
-![map_crops](C:/Users/Egina/Dropbox/_Work/Github/explore_agrochem/map_crops.png)
+![map_crops](https://user-images.githubusercontent.com/54320408/101517655-9aa60e80-3946-11eb-8e4a-f804b1124575.png)
 
 Here, we can notice specific areas where the changes happened, such as a decrease in cereals and increase in oilseeds for the Prairie region.
 
